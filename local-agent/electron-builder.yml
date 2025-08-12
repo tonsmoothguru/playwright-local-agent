@@ -1,0 +1,28 @@
+appId: com.automation.playwrightagent
+productName: Playwright Local Agent
+files:
+  - "src/**"
+  - "node_modules/**"
+asar: true
+asarUnpack:
+  - "**/playwright/**"
+  - "**/playwright-core/**"
+directories:
+  output: "release"
+extraResources:
+  - from: assets/
+    to: assets
+win:
+  target:
+    - target: nsis
+      arch:
+        - x64
+  icon: "assets/playwright.ico"
+nsis:
+  oneClick: false
+  perMachine: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+  artifactName: "${productName} Setup ${version}.exe"
+publish: null

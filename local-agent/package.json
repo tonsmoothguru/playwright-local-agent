@@ -1,0 +1,24 @@
+{
+  "name": "electron-playwright-agent",
+  "version": "1.0.0",
+  "main": "src/main.js",
+  "private": "true",
+  "type": "module",
+  "scripts": {
+    "dev": "electron .",
+    "dist": "electron-builder --win"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "playwright": "^1.54.2",
+    "uuid": "^11.1.0",
+    "ws": "^8.18.3"
+  },
+  "devDependencies": {
+    "electron-builder": "^26.0.12",
+    "electron": "^37.2.6"
+  }
+}
